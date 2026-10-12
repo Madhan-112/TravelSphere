@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root{font-family:"DM Sans",sans-serif;color:#17363b;background:#fbfaf6;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;font-optical-sizing:auto;font-weight:400;--ink:#17363b;--muted:#6f8180;--cream:#fbfaf6;--paper:#f3f0e8;--green:#b8cfb7;--deep:#0e3038;--line:#dfe5df;--accent:#d3e2c9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-width:320px}
+button,input,select,textarea{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+::selection{background:#d3e2c9;color:#17363b}
+.calm-mode{--cream:#f1f5f1;--paper:#e8efe8;--accent:#b7d2d0}
+
+/* Consistent TravelSphere typography */
+html,
+body,
+#root,
+.site {
+  font-family: "DM Sans", sans-serif;
+}
+
+button,
+input,
+select,
+textarea,
+.button,
+.filter-chip,
+.nav-links a {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+h1 em,
+h2 em,
+.destination-card .card-title-row h3,
+.category-title,
+.quote-section > p,
+.intro-strip p,
+.empty-state h3 {
+  font-family: "Playfair Display", serif;
+}
+
+/* True dark mode */
+.site.dark-mode {
+  --ink: #edf3ef;
+  --muted: #b1c0ba;
+  --cream: #111a1c;
+  --paper: #1d292b;
+  --deep: #071114;
+  --green: #a9c8b1;
+  --line: #344447;
+  --accent: #263d36;
+
+  color: var(--ink);
+  background: var(--cream);
+}
+
+/* Header and navigation */
+.dark-mode .navbar {
+  background: var(--cream);
+  border-bottom-color: var(--line);
+}
+
+.dark-mode .nav-links {
+  color: #c0cdc7;
+}
+
+.dark-mode .nav-links > a:hover,
+.dark-mode .nav-links > a.active {
+  color: #fff;
+}
+
+.dark-mode .nav-links .nav-admin {
+  background: #263a34;
+  color: #f1f5ef;
+}
+
+.dark-mode .brand-light {
+  color: #a7c2b1;
+}
+
+.dark-mode .brand small {
+  color: #a5b8ae;
+}
+
+/* Main sections and cards */
+.dark-mode .category-section,
+.dark-mode .planner-cta,
+.dark-mode .page-hero,
+.dark-mode .destination-hero,
+.dark-mode .planner-hero,
+.dark-mode .guides-hero,
+.dark-mode .gallery-hero,
+.dark-mode .about-hero,
+.dark-mode .contact-hero,
+.dark-mode .admin-hero {
+  background: #1a2828;
+}
+
+.dark-mode .destination-card,
+.dark-mode .search-field,
+.dark-mode .filter-select,
+.dark-mode .empty-state,
+.dark-mode .floating-note {
+  background: #1b282a;
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.dark-mode .destination-card-body,
+.dark-mode .destination-card-body p,
+.dark-mode .card-meta,
+.dark-mode .card-location,
+.dark-mode .section-heading p,
+.dark-mode .planner-cta p,
+.dark-mode .stats-strip span,
+.dark-mode .floating-note small {
+  color: var(--muted);
+}
+
+.dark-mode .card-meta {
+  border-color: var(--line);
+}
+
+.dark-mode .card-meta b,
+.dark-mode .card-title-row h3,
+.dark-mode .floating-note b {
+  color: var(--ink);
+}
+
+.dark-mode .filter-select select,
+.dark-mode .search-field input {
+  color: var(--ink);
+}
+
+.dark-mode .filter-select select option {
+  background: #1b282a;
+  color: #edf3ef;
+}
+
+.dark-mode .filter-chip,
+.dark-mode .button-outline {
+  border-color: #53665d;
+  color: #e7eee8;
+}
+
+.dark-mode .filter-chip.active,
+.dark-mode .filter-chip:hover {
+  background: #b8cfb7;
+  color: #102326;
+  border-color: #b8cfb7;
+}
+
+.dark-mode .button-light,
+.dark-mode .button-light-alt {
+  background: #dce9d7;
+  color: #17363b;
+}
+
+.dark-mode .button-dark {
+  background: #b8cfb7;
+  color: #102326;
+}
+
+.dark-mode .button-dark:hover {
+  background: #d0e1c8;
+}
+
+.dark-mode .icon-button {
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.dark-mode .icon-button:hover {
+  background: var(--paper);
+}
+
+.dark-mode .page-hero p,
+.dark-mode .breadcrumbs,
+.dark-mode .demo-note {
+  color: #c0cdc7;
+}
+
+.dark-mode .page-hero:after {
+  border-color: #344a42;
+  box-shadow: 0 0 0 35px #202e2a, 0 0 0 70px #1b2926;
+}
+
+.dark-mode .quote-decoration {
+  color: #263330;
+}
+
+.dark-mode .circle-link {
+  border-color: #53665d;
+}
+
+.dark-mode .circle-link:hover {
+  background: #263a34;
+}
+
+/* Consistent button text and sizing */
+.site .button,
+.site button,
+.site .filter-chip {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.site .button {
+  letter-spacing: 0.1px;
+}
+
+.site .button svg {
+  flex-shrink: 0;
+}
